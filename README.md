@@ -11,6 +11,12 @@ $ npm install kaizenplatform/kaizen-redux-action-types --save
 ## Usage
 
 ```js
+import Types, { async } from 'kaizen-redux-action-types';
+```
+
+First, define action types constants:
+
+```js
 // actions/actionTypes.js
 import Types, { async } from 'kaizen-redux-action-types';
 
@@ -21,6 +27,8 @@ const types = new Types(
 
 export default types;
 ```
+
+Then, use `get()` to get the defined constants:
 
 ```js
 // actions/user.js
