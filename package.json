@@ -1,7 +1,7 @@
 {
-  "name": "kaizen-react-utils",
+  "name": "kaizen-redux-action-types",
   "version": "1.0.0",
-  "description": "React utilities of Kaizen Platform",
+  "description": "The helper for Redux action types constants",
   "main": "index.js",
   "scripts": {
     "clean": "rimraf dist",
