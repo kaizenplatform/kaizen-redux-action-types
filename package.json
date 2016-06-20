@@ -2,7 +2,7 @@
   "name": "kaizen-redux-action-types",
   "version": "1.0.0",
   "description": "The helper for Redux action types constants",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "clean": "rimraf dist",
     "build": "npm run clean && npm run lint && npm run test && babel lib --out-dir dist",
@@ -11,7 +11,7 @@
     "test:watch": "npm test -- --watch"
   },
   "files": [
-    "./dist"
+    "dist/index.js"
   ],
   "author": "Kaizen Platform, Inc.",
   "repository": "https://github.com/kaizenplatform/kaizen-redux-action-types/",
