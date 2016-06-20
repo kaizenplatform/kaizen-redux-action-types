@@ -5,7 +5,7 @@ The helper for Redux action types constants.
 ## Installation
 
 ```sh
-$ npm install kaizen-redux-action-types --save
+$ npm install kaizenplatform/kaizen-redux-action-types --save
 ```
 
 ## Usage
@@ -74,7 +74,7 @@ The shortcut to define async action types. It returns three types with suffix.
 
 ### `get(type)`
 
-```
+```js
 types.get('SORT'); // returns `SORT`
 types.get('FETCH_USER_SUCCESS'); // returns `FETCH_USER_SUCCESS`
 types.get('UNDEFINED_ACTION'); // An exception is thrown.
@@ -106,6 +106,6 @@ $ npm run test:watch
 $ npm run lint
 ```
 
-## Footnote
+## Note
 
 kaizen-redux-action-types is inspired by https://github.com/ripeworks/redux-action-types
