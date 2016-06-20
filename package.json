@@ -1,0 +1,39 @@
+{
+  "name": "kaizen-react-utils",
+  "version": "1.0.0",
+  "description": "React utilities of Kaizen Platform",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && npm run lint && npm run test && babel lib --out-dir dist",
+    "lint": "eslint lib",
+    "test": "mocha --compilers js:babel-register --require babel-polyfill --recursive",
+    "test:watch": "npm test -- --watch"
+  },
+  "files": [
+    "./dist"
+  ],
+  "author": "Kaizen Platform, Inc.",
+  "repository": "https://github.com/kaizenplatform/kaizen-redux-action-types/",
+  "license": "CC-BY-NC-ND-4.0",
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-eslint": "^6.0.4",
+    "babel-polyfill": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-power-assert": "^1.0.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-register": "^6.9.0",
+    "eslint": "^2.13.0",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.8.1",
+    "eslint-plugin-jsx-a11y": "^1.5.3",
+    "eslint-plugin-react": "^5.2.2",
+    "mocha": "^2.5.3",
+    "power-assert": "^1.4.1"
+  },
+  "dependencies": {
+    "lodash.flattendeep": "^4.2.0"
+  }
+}
